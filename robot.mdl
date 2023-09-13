@@ -1,0 +1,20 @@
+constants shiny_purple 0.2 0.3 0.7 0.0 0.0 0.0 0.0 0.3 0.7
+constants matte_purple 0.2 0.7 0.3 0.0 0.0 0.0 0.0 0.7 0.3
+// vary knob start_frame end_frame start_value end_value
+//move 400 0 0 knobby
+//vary knobby 0 100 1
+//BODY
+frames 4
+basename 
+push
+move 250 knobby 0
+vary knobby 0 4 0 250
+//HEAD
+push
+sphere shiny_purple 0 0 0 50
+sphere shiny_purple 50 0 0 50
+sphere shiny_purple 100 0 0 50
+sphere shiny_purple 150 0 0 50
+sphere shiny_purple 200 0 0 50
+pop
+save robot.png
